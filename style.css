@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f8f7f3;
+  color: #1a24fb;
+}
+
+header {
+  margin-bottom: 56px;
+  background-color: #1a24fb;
+  color: #f8f7f3;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: regular;
+  padding-left: 20px;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  gap: 50px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.book {
+  position: relative;
+  color: #1a24fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 250px;
+  min-height: 200px;
+  border: 2px solid #1a24fb;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.p {
+  font-family: Montserrat, sans-serif;
+}
+
+.number {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: medium;
+  margin-bottom: 20px;
+}
+
+.button {
+  height: 18px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  position: absolute; /* Fontos! */
+  bottom: 20px; /* Gomb pozíciója a doboz alján */
+  left: 20px; /* Gomb pozíciója a bal szélen */
+}
+
+.button:hover {
+  background-color: #1a24fb;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+      margin-bottom: 20px;
+  }
+
+  #root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .book {
+      display: flex;
+      justify-content: space-between;
+  }
+}
